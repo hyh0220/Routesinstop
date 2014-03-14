@@ -43,6 +43,7 @@ public class CreateMorePoints {
                 float a0 = Float.parseFloat(location[0]);
                 float b0 = Float.parseFloat(location[1]);
                 if (a1!=0 && b1!=0) {
+                    timesmore = (int) Math.ceil((float) Math.sqrt(Math.pow((a0-a1),2)+Math.pow((b0-b1),2))/0.0001);
                     for (int i = 0; i < timesmore; i++) {
                         k++;
                         float a = (a0-a1)/timesmore*i+a1;
